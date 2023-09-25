@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Light on Novels
-// @version      0.1.0
+// @version      0.1.1
 // @description  Add colors to novels
 // @author       dcdotjs
 // @match        https://www.lightnovelworld.com/novel/*/*
@@ -17,7 +17,7 @@ const THOUGHT_COLOR = '#ff00ff';
 const ERROR_COLOR = '#ff0000';
 
 GM_addStyle(`
-#chapter-container p {
+#chapter-container p:not(:last-child) {
     margin-bottom: 5em !important;
 }
 `);
