@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Light on Novels
-// @version      0.1.1
+// @version      0.1.2
 // @description  Add colors to novels
 // @author       dcdotjs
 // @match        https://www.lightnovelworld.com/novel/*/*
