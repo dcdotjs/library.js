@@ -73,7 +73,7 @@ function highlightText(startChar, endChar, color, fullColor) {
             `<b style="color: ${color};">${startChar}${text.replaceAll('\'', '&#39;')}${endChar}</b>` :
             `${startChar}<b style="color: ${color};">${text.replaceAll('\'', '&#39;')}</b>${endChar}`;
 
-        content = content.replace(`${startChar}${text}${endChar}`, replacement);
+        content = content.replaceAll(`${startChar}${text}${endChar}`, replacement);
     }
 }
 
