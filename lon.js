@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Light on Novels
-// @version      0.1.2
+// @version      0.1.3
 // @description  Add colors to novels
 // @author       dcdotjs
 // @match        https://www.lightnovelworld.com/novel/*/*
@@ -33,7 +33,9 @@ content = content
     .replaceAll('“', '"')
     .replaceAll('”', '"')
     .replaceAll('‘', '\'')
-    .replaceAll('’', '\'');
+    .replaceAll('’', '\'')
+    .replaceAll('&lt;', '[')
+    .replaceAll('&gt;', ']');
 
 chapter.innerHTML = content;
 damageControl();
